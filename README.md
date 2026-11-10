@@ -10,13 +10,20 @@ This is an unofficial fan project. It is not affiliated with or endorsed by Jami
 
 ## Install
 
-**Claude Code**
+**Any agent (Claude Code, Cursor, Codex, Gemini CLI and more)**, using the [skills CLI](https://skills.sh):
 ```bash
-git clone https://github.com/Benzo-Fury/freelancervoice.git
-cp -R freelancervoice/skill/freelancervoice ~/.claude/skills/
+npx skills add Benzo-Fury/freelancervoice
 ```
 
-**claude.ai**: go to Customize → Skills → Add → Upload a skill, and choose `freelancervoice.zip`.
+**Claude Code plugin**: run these inside Claude Code:
+```
+/plugin marketplace add Benzo-Fury/freelancervoice
+/plugin install freelancervoice@freelancervoice
+```
+
+**claude.ai / Claude desktop app**: download [`freelancervoice.zip`](https://github.com/Benzo-Fury/freelancervoice/raw/main/freelancervoice.zip), then go to Customize → Skills → Add → Upload a skill.
+
+**Manual**: copy `skills/freelancervoice` into `~/.claude/skills/`.
 
 ## Usage
 
@@ -24,15 +31,16 @@ Paste a client message and ask for a reply, for example: *"Client says they foun
 
 ## Structure
 ```
-skill/freelancervoice/
+skills/freelancervoice/
 ├── SKILL.md                 # voice, core beliefs, reply structure, playbook index
 └── references/playbooks.md  # 21+ situations with example replies
+.claude-plugin/              # Claude Code plugin + marketplace manifests
 freelancervoice.zip          # packaged for claude.ai upload
 ```
 
 ## Rebuilding the zip
 ```bash
-cd skill && rm -f ../freelancervoice.zip && zip -r ../freelancervoice.zip freelancervoice -x '.*'
+cd skills && rm -f ../freelancervoice.zip && zip -r ../freelancervoice.zip freelancervoice -x '.*'
 ```
 
 ## How it was built
