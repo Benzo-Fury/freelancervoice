@@ -1,0 +1,8 @@
+{
+  "name": "freelancervoice",
+  "version": "1.0.0",
+  "description": "Warm-but-firm freelancer replies to clients, in the style of Jamie Brindle (@thejamiebrindle). Unofficial.",
+  "author": { "name": "Benzo-Fury" },
+  "repository": "https://github.com/Benzo-Fury/freelancervoice",
+  "keywords": ["freelance", "clients", "communication", "skill"]
+}

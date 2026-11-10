@@ -1,0 +1,12 @@
+{
+  "name": "freelancervoice",
+  "owner": { "name": "Benzo-Fury" },
+  "description": "Freelancer client-reply skill in the style of Jamie Brindle (unofficial)",
+  "plugins": [
+    {
+      "name": "freelancervoice",
+      "source": "./",
+      "description": "Warm-but-firm freelancer replies to clients, in the style of Jamie Brindle (@thejamiebrindle). Unofficial."
+    }
+  ]
+}
